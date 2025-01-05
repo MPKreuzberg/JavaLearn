@@ -24,6 +24,28 @@ package variables;
 //notation – for example, 130000.0 can be expressed as double d1=1.3e+5;, and 0.13 can 
 //be expressed as double d2=1.3e-1;.
 
+//Here are some sample code fragments that initialize int variables to 30 using the various numbering 
+//systems. Firstly, decimal is used; then hexadecimal, and finally, binary:
+// // decimal
+// int dec = 30;
+// // hexadecimal = 16 + 14
+// int hex = 0x1E;
+// // binary = 16 + 8 + 4 + 2
+// int bin = 0b11110;
+//
+//
+//A literal number, such as 22, is considered an int by default. If you want to have 22 treated as long 
+//(instead of int), you must suffix either an uppercase or lowercase L to the literal. Here’s an example:
+// int x  = 10;
+// long n = 10L;
+//Floating-point numbers behave similarly. A decimal number is, by default, double. To have any 
+//decimal number treated as float (as opposed to double), you must suffix the literal with either 
+//an uppercase or lowercase F. Assuming range is not an issue then one reason for using float as 
+//opposed to double is memory conservation (as float requires 4 bytes whereas double requires 
+//8 bytes). Here’s an example:
+// double d = 10.34;
+// float f  = 10.34F;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -31,11 +53,12 @@ public class Main {
 //      declaring a variable
 //		int age;
 //		age = 25;
-		
+
 //		shorter way
 		int age = 25;
-		
-				   System.out.println(age);
+
+		System.out.println(age);
+		System.out.println("You are "+ age + " Years old!");
 
 	}
 
